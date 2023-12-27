@@ -1,0 +1,25 @@
+{
+  "name": "automation-practice-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierAnalystQA/automation-practice-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierAnalystQA/automation-practice-playwright/issues"
+  },
+  "homepage": "https://github.com/JavierAnalystQA/automation-practice-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
