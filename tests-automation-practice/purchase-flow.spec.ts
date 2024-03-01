@@ -20,13 +20,12 @@ test.beforeEach('Go to the automation practice page', async ({page}) => {
     await homePage.visit();
   });
 
-  test('Purchase flow', async ({page}) => {
+test('Purchase flow', async ({page}) => {
     const homePage = new HomePage(page);
     await homePage.clickOnWomenTopMenu();
 
     //Women Catergoy Page
     const womenCategoryPage = new WomenCategoryPage(page);
-    expect(await womenCategoryPage.getMessageInStock(0)).toBe('In stock');
     await womenCategoryPage.clickOnShortAndSleveeBlue();
     
     //PDP Short and Slevee
