@@ -20,7 +20,8 @@ test.beforeEach('Go to the automation practice page', async ({page}) => {
     await homePage.visit();
   });
 
-test('Purchase flow', async ({page}) => {
+test.describe('purchase' , () => {
+  test('Purchase flow', async ({page}) => {
     const homePage = new HomePage(page);
     await homePage.clickOnWomenTopMenu();
 
@@ -107,4 +108,5 @@ test('Purchase flow', async ({page}) => {
     //Order Confirmation Page
     const orderConfirmationPage = new OrderConfirmationPage(page);
     expect(await orderConfirmationPage.getOrderConfirmation()).toBe('Your order on My Shop is complete.');
-  });
+    });
+});

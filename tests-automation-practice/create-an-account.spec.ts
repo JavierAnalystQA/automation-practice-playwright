@@ -12,7 +12,8 @@ test.beforeEach('Go to the automation practice page', async ({page}) => {
   await homePage.visit();
 });
 
-test('Create an account', async ({page}) => {
+test.describe('account' , () => {
+  test('Create an account', async ({page}) => {
     //home page
     const homePage = new HomePage(page);
     await homePage.clickOnSignIn();
@@ -36,4 +37,5 @@ test('Create an account', async ({page}) => {
     //My account page
     const myAccountPage = new MyAccountPage(page);
     expect(await myAccountPage.getTextAccountCreated()).toBe(' Your account has been created.');
+  });
 });
